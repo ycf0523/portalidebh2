@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>IDE-BH</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <!-- Our CSS stylesheet file -->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+                <link rel="stylesheet" href="assets/css/menu.css" />
+
+		<!-- Font Awesome Stylesheet -->
+		<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css" />
+        		<link rel="stylesheet" href="assets/css/dato.css" />
+    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery-ui.js"></script>  
+<script src="js/mover.js"></script>
+<script src="js/datos.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div id="art-page-background-simple-gradient">
+        <div id="art-page-background-gradient"></div>
+    </div>
+    <div id="art-main">
+        <div class="art-sheet">
+            <div class="art-sheet-tl"></div>
+            <div class="art-sheet-tr"></div>
+            <div class="art-sheet-bl"></div>
+            <div class="art-sheet-br"></div>
+            <div class="art-sheet-tc"></div>
+            <div class="art-sheet-bc"></div>
+            <div class="art-sheet-cl"></div>
+            <div class="art-sheet-cr"></div>
+            <div class="art-sheet-cc"></div>
+            <div class="art-sheet-body">
+ <!--                <div class="art-header">
+   
+                         <table width="100%" border="0" background="images/relleno2.jpg">
+  <tr>
+    <td width="100%" height="100"><img src="images/otro_header.jpg"  height="100" /></td>
+    <td>&nbsp;</td>
+     </tr>
+</table>-->
+                    
+                </div>
+                
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div  class="art-layout-cell art-content">
+      
+                            <div class="art-post">
+                                                                     <div id="menuf" style="z-index:9; position: absolute; left:80%;">
+             <table align="center" border="0" bgcolor="#C9E3EE" >
+<tr align="center">
+    <td style="left: 50%;">  Menu</td>
+  </tr>             
+  <tr >
+  <td align="center"><input type="submit" name="btm1" id="btm1" value="Distritos (Alcantarillado)" onclick=" btdirecciona('http://localhost:8082/webgis/map_wms_wfs_spatial_query.html');"  class="art-button"/></td>
+  </tr>
+  
+  <tr align="center">
+    <td ><input type="submit" name="btm2" id="btm2" value="Colector Central" onclick=" btdirecciona('http://localhost:8082/webgis/colector_existente.html');" class="art-button" align="center"/></td>
+  </tr>
+  
+  <tr align="center">
+    <td ><input type="submit" name="btm3" id="btm3" value="Algo 2" onclick=" btdirecciona('http://localhost:8082/geoexplorer/composer/#maps/1');"  class="art-button"/></td>
+  </tr>
+  
+  <tr align="center">
+    <td ><input type="submit" name="btm3" id="btm3" value="Fuentes Contaminantes (Prueba 4)" onclick=" btdirecciona('mapa/mapa2');"  class="art-button"/></td>
+  </tr>
+  
+  <tr align="center">
+    <td ><input type="submit" name="btm3" id="btm3" value="Fuentes Contaminantes (Prueba 5)" onclick=" btdirecciona('mapa/mapa2');"  class="art-button"/></td>
+  </tr>
+  
+  <tr align="center">
+    <td ><input type="submit" name="btm3" id="btm3" value="Fuentes Contaminantes (Prueba 6)" onclick=" btdirecciona('mapa/mapa2');"  class="art-button"/></td>
+  </tr>
+  
+  <tr align="center">
+    <td ><input type="submit" name="btm3" id="btm3" value="Fuentes Contaminantes (Prueba 7)" onclick=" btdirecciona('mapa/mapa2');"  class="art-button"/></td>
+  </tr>
+  
+  <tr align="center">
+    <td ><input type="submit" name="btm3" id="btm3" value="Fuentes Contaminantes (Prueba 8)" onclick=" btdirecciona('mapa/mapa2');"  class="art-button"/></td>
+  </tr>
+  
+  <tr align="center">
+    <td ><input type="submit" name="btm3" id="btm3" value="Fuentes Contaminantes (Prueba 9)" onclick=" btdirecciona('mapa/mapa2');"  class="art-button"/></td>
+  </tr>
+  
+  <tr align="center">
+    <td ><input type="submit" name="btm3" id="btm3" value="Fuentes Contaminantes (Prueba 10)" onclick=" btdirecciona('mapa/mapa2');"  class="art-button"/></td>
+  </tr>
+  
+  <tr align="center">
+    <td ><input type="submit" name="btm3" id="btm3" value="Fuentes Contaminantes (Prueba 11)" onclick=" btdirecciona('mapa/mapa2');"  class="art-button"/></td>
+  </tr>
+  
+  <tr align="center">
+    <td ><input type="submit" name="btm3" id="btm3" value="Fuentes Contaminantes (Prueba 12)" onclick=" btdirecciona('mapa/mapa2');"  class="art-button"/></td>
+  </tr>
+  
+  <tr align="center">
+    <td ><input type="submit" name="btm3" id="btm3" value="Fuentes Contaminantes (Prueba 13)" onclick=" btdirecciona('mapa/mapa2');"  class="art-button"/></td>
+  </tr>
+  
+  <tr align="center">
+    <td ><input type="submit" name="btm3" id="btm3" value="Fuentes Contaminantes (Prueba 14)" onclick=" btdirecciona('mapa/mapa2');"  class="art-button"/></td>
+  </tr>
+  
+  <tr align="center">
+    <td ><input type="submit" name="btm3" id="btm3" value="Fuentes Contaminantes (Prueba 15)" onclick=" btdirecciona('mapa/mapa2');"  class="art-button"/></td>
+  </tr>
+  
+  <tr align="center">
+    <td ><input type="submit" name="btm3" id="btm3" value="Fuentes Contaminantes (Prueba 16)" onclick=" btdirecciona('mapa/mapa2');"  class="art-button"/></td>
+  </tr>
+  
+  <tr align="center">
+    <td ><input type="submit" name="btm3" id="btm3" value="Fuentes Contaminantes (Prueba 17)" onclick=" btdirecciona('mapa/mapa2');"  class="art-button"/></td>
+  </tr>
+  
+  <tr align="center">
+    <td ><input type="submit" name="btm3" id="btm3" value="Fuentes Contaminantes (Prueba 18)" onclick=" btdirecciona('mapa/mapa2');"  class="art-button"/></td>
+  </tr>
+  
+
+  
+</table>
+                                                            </div>
+							  <!-- AQUI VA LA TABLA DE LAS IMAGENES DEL BODY -->
+<iframe name="pepe" id="contenido" src="" class="contenido" ></iframe>
+                                                       </div>
+							
+                        </div>
+                        <div class="art-layout-cell art-sidebar1">
+                            <div class="art-block">
+                                <div class="art-block-body">
+                                            <div class="art-blockheader">
+                                            </div>
+                                            <div class="art-blockcontent">
+                                                <div class="art-blockcontent-body">
+                                            <!-- AQUI SE MODIFICA LA INFORMACION DE CONTACTO -->
+                   
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                            <div class="art-block">
+                                <div class="art-block-body">
+                                            <div class="art-blockheader">
+
+                                                <div class="r"></div>
+                                                 
+                                            </div>
+									   </div>	
+                                  </div>           
+                                <div class="art-block">
+                                <div class="art-block-body">
+                                            <div class="art-blockheader">
+                                                
+                                                <div class="r"></div>
+                                                
+                                            </div>
+                                            <div class="art-blockcontent">
+                                                <div class="art-blockcontent-body">
+                                           <!-- AQUI SE MODIFICA LOS ENLACE -->                                   
+                                                      
+                                            <!-- block-content -->
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>
+									   </div>	
+                                  </div>  						
+											
+                                <div class="art-block">
+                                <div class="art-block-body">
+                                            <div class="art-blockheader">
+                                                
+                                                <div class="r"></div>
+                                                
+                                            </div>
+                                            <div class="art-blockcontent">
+                                                <div class="art-blockcontent-body">
+                                            <!-- AQUI SE MODIFICA LAS NOTICIAS --> 
+                                                            <div>
+															
+                                                                              </div>
+                                            <!-- /block-content -->
+                                            
+                                            		<div class="cleared"></div>
+                                                </div>
+                                            </div>												
+																					
+                            		<div class="cleared"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cleared"></div><div class="art-footer">
+                    <div class="art-footer-t"></div>
+                    <div class="art-footer-l"></div>
+                    <div class="art-footer-b"></div>
+                    <div class="art-footer-r"></div>
+                    <div class="art-footer-body">
+                        <div class="art-footer-text">
+                       <table width="100%" border="0">
+  <tr>
+    <td width="76%" ><img src="images/Iconos/GTEBH.JPG" width="3.5%" height="35"	 align = "left" class="imagenlogo" /><img src="images/Iconos/logoaecid.jpg" width="10%" height="35" align="left"  class="imagenlogo"/> <div align="right" ><a href="texto/derechos.docx" >Derechos Reservados</a> | <a href="texto/privacidad.docx">Privacidad</a>| <a href="texto/avisolegal.docx">Avisos Legal</a>  </div> </td>
+    <td width="25%" align="right">Última modificación: 06/10/2015</td>
+  </tr>
+</table>
+                            <p>
+                          </p>
+                      </div>
+                		<div class="cleared"></div>
+                    </div>
+                </div>
+        		<div class="cleared"></div>
+            </div>
+        </div>
+        <div class="cleared"></div>
+        <p class="art-page-footer"></p>
+    </div>
+    
+</body>
+</html>
