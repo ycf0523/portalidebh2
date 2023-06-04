@@ -66,10 +66,10 @@
                     <q-item-section>Blog</q-item-section>
                   </q-item>
                   <q-item
-                    to="/Moodle"
+                    to="/moodle"
                     clickable
                   >
-                    <q-item-section>Moddle</q-item-section>
+                    <q-item-section>Moodle</q-item-section>
                   </q-item>
                   <q-item
                     to="/mapas"
