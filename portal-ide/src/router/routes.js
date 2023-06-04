@@ -10,6 +10,7 @@ const routes = [
       { path: '/moodle', component: () => import('src/pages/moodle.vue') },
       { path: '/mapas', component: () => import('src/pages/mapas.vue') },
       { path: '/noticias', component: () => import('src/pages/noticias.vue') },
+      { path: '/enl-const', component: () => import('src/pages/enl-const.vue') },
       { path: '/ayuda', component: () => import('src/pages/ayuda.vue') }
     ]
   },

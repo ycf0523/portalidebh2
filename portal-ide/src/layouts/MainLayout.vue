@@ -97,6 +97,38 @@
               <q-item-section side>
                 <q-icon name="keyboard_arrow_right"/>
               </q-item-section>
+              <q-menu anchor="top end" self="top start">
+                <q-list>
+                  <q-item
+                    clickable
+                  >
+                    <q-item-section>
+                      Enlaces
+                    </q-item-section>
+                    <q-item-section side>
+                      <q-icon name="keyboard_arrow_right"/>
+                    </q-item-section>
+                      <q-menu anchor="top end" self="top start">
+                        <q-item
+                          clickable
+                        >
+                          <q-item-section>IGT</q-item-section>
+                        </q-item>
+                        <q-item
+                          clickable
+                        >
+                          <q-item-section>Geoportal IDEE</q-item-section>
+                        </q-item>
+                      </q-menu>
+                  </q-item>
+                  <q-item
+                    to="/enl-const"
+                    clickable
+                  >
+                    <q-item-section>=========</q-item-section>
+                  </q-item>
+                </q-list>
+              </q-menu>
             </q-item>
             <q-separator/>
             <q-item
@@ -225,7 +257,7 @@ export default defineComponent({
 <style lang="scss">
   .header-image {
     //height: 100%;
-    //z-index: -1;
+    z-index: -1;
     //opacity: 0.7;
     //filter: grayscale(50%);
   }
