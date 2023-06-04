@@ -2,7 +2,7 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-img
-        src="../statics/header1.png"
+        src="../statics/header.jpg"
         class="header-image"/>
       <q-toolbar>
         <q-btn
@@ -28,7 +28,12 @@
       >
         <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px; border-right: 1px solid #ddd">
           <q-list padding>
-            <q-item clickable v-ripple>
+            <q-item
+              to="/"
+              exact
+              clickable
+              v-ripple
+              >
               <q-item-section avatar>
                 <q-icon name="home" />
               </q-item-section>
@@ -37,8 +42,11 @@
                 Inicio
               </q-item-section>
             </q-item>
-
-            <q-item clickable v-ripple>
+            <q-separator/>
+            <q-item
+              clickable
+              v-ripple
+              >
               <q-item-section avatar>
                 <q-icon name="list" />
               </q-item-section>
@@ -46,9 +54,39 @@
               <q-item-section>
                 Servicios
               </q-item-section>
+              <q-item-section side>
+                <q-icon name="keyboard_arrow_right"/>
+              </q-item-section>
+              <q-menu anchor="top end" self="top start">
+                <q-list>
+                  <q-item
+                    to="/blog"
+                    clickable
+                  >
+                    <q-item-section>Blog</q-item-section>
+                  </q-item>
+                  <q-item
+                    to="/Moodle"
+                    clickable
+                  >
+                    <q-item-section>Moddle</q-item-section>
+                  </q-item>
+                  <q-item
+                    to="/mapas"
+                    clickable
+                  >
+                    <q-item-section>Visor de mapas</q-item-section>
+                  </q-item>
+                </q-list>
+              </q-menu>
             </q-item>
-
-            <q-item clickable v-ripple>
+            <q-separator/>
+            <q-item
+              to="/noticias"
+              exact
+              clickable
+              v-ripple
+              >
               <q-item-section avatar>
                 <q-icon name="newspaper" />
               </q-item-section>
@@ -56,9 +94,17 @@
               <q-item-section>
                 Noticias
               </q-item-section>
+              <q-item-section side>
+                <q-icon name="keyboard_arrow_right"/>
+              </q-item-section>
             </q-item>
-
-            <q-item clickable v-ripple>
+            <q-separator/>
+            <q-item
+              to="/ayuda"
+              exact
+              clickable
+              v-ripple
+              >
               <q-item-section avatar>
                 <q-icon name="help" />
               </q-item-section>
@@ -66,7 +112,11 @@
               <q-item-section>
                 Ayuda
               </q-item-section>
+              <q-item-section side>
+                <q-icon name="keyboard_arrow_right"/>
+              </q-item-section>
             </q-item>
+            <q-separator/>
           </q-list>
         </q-scroll-area>
 
@@ -85,17 +135,11 @@
     </q-page-container>
     <q-footer>
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
-        <q-toolbar-title>
-          Quasar App
-        </q-toolbar-title>
+        <q-img
+          src="../statics/iconos/gtebh.svg" width="50px"/>
+        <q-img
+          src="../statics/iconos/logoaecid.jpg" width="200px"/>
+        <div><a href="">Derechos Reservados</a> | <a href="">Privacidad</a> | <a href="">Aviso Legal</a></div>
       </q-toolbar>
     </q-footer>
   </q-layout>
@@ -194,5 +238,6 @@ export default defineComponent({
   .menu{
     font-weight: bolder;
     color: black;
+    text-align: right;
   }
 </style>
