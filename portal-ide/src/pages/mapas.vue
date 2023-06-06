@@ -1,14 +1,45 @@
 <template>
-  <q-page class="q-pa-lg">
-    <h5 class="q-mt-none">==============Visor de mapas en construcción ======================</h5>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nam eius fugiat voluptate eveniet est pariatur rem tempore, voluptatum quis quas minima hic soluta et excepturi voluptatem in. Illo, quisquam.
-  </q-page>
+  
+    <div id="map"></div>
+ 
 </template>
 
 <script>
 import { defineComponent } from 'vue'
+//import L from 'leaflet'
+
+//import './style.css';
+import Map from 'ol/Map.js';
+import OSM from 'ol/source/OSM.js';
+import TileLayer from 'ol/layer/Tile.js';
+import View from 'ol/View.js';
+
 
 export default defineComponent({
-  
-})
+
+  mounted () { 
+    const map = new Map({
+      target: 'map',
+      layers: [
+        new TileLayer({
+          source: new OSM(),
+        }),
+      ],
+      view: new View({
+        projection: 'EPSG:4326',
+        center: [-82.36, 23.11],
+        zoom: 12.5,
+      }),
+    })
+  }
+});
 </script>
+<style lang="scss">
+#map {
+  height: 571px;
+  width: 100%; /* Ancho del contenedor del mapa */
+  max-width: 100%; /* Ancho máximo del contenedor del mapa */
+  overflow: hidden; /* Oculta cualquier contenido que se salga del contenedor */
+  position: relative; /* Posición relativa para los elementos internos */
+}
+</style>
