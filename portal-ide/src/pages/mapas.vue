@@ -6,14 +6,11 @@
 
 <script>
 import { defineComponent } from 'vue'
-//import L from 'leaflet'
 
-//import './style.css';
-import Map from 'ol/Map.js';
-import OSM from 'ol/source/OSM.js';
-import TileLayer from 'ol/layer/Tile.js';
-import View from 'ol/View.js';
-
+import Map from 'ol/Map.js'
+import OSM from 'ol/source/OSM.js'
+import TileLayer from 'ol/layer/Tile.js'
+import View from 'ol/View.js'
 
 export default defineComponent({
 
@@ -29,10 +26,11 @@ export default defineComponent({
         projection: 'EPSG:4326',
         center: [-82.36, 23.11],
         zoom: 12.5,
-      }),
+      })
     })
   }
-});
+  
+})
 </script>
 <style lang="scss">
 #map {
