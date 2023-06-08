@@ -1,5 +1,5 @@
 <template>
-  
+ 
     <div id="map"></div>
  
 </template>
@@ -29,10 +29,11 @@ export default defineComponent({
       })
     })
   }
-  
+
 })
 </script>
 <style lang="scss">
+@import url('node_modules/ol/ol.css');
 #map {
   height: 571px;
   width: 100%; /* Ancho del contenedor del mapa */
