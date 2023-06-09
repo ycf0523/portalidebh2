@@ -1,5 +1,5 @@
 <template>
-  <q-page>
+  <q-page class="q-ma-md">
     <q-carousel
       height="571px"
       animated

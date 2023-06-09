@@ -110,11 +110,17 @@
                     </q-item-section>
                       <q-menu anchor="top end" self="top start">
                         <q-item
+                          tag="a"
+                          target="_blank"
+                          href="https://www.geotech.cu/"
                           clickable
                         >
                           <q-item-section>IGT</q-item-section>
                         </q-item>
                         <q-item
+                          tag="a"
+                          target="_blank"
+                          href="https://www.idee.es/"
                           clickable
                         >
                           <q-item-section>Geoportal IDEE</q-item-section>
@@ -161,9 +167,10 @@
       </q-drawer>
 
     <q-page-container>
-      <keep-alive>
+      <!--<keep-alive>
         <router-view />
-      </keep-alive>
+      </keep-alive>-->
+      <router-view />
     </q-page-container>
     <q-footer>
       <q-toolbar>

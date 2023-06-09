@@ -1,12 +1,14 @@
 <template>
- 
+  <head>
+    <link rel="stylesheet" href="node_modules/ol/ol.css">
+  </head>
+  <q-page class="q-pa-md">
     <div id="map"></div>
- 
+  </q-page>
 </template>
 
 <script>
 import { defineComponent } from 'vue'
-
 import Map from 'ol/Map.js'
 import OSM from 'ol/source/OSM.js'
 import TileLayer from 'ol/layer/Tile.js'
@@ -33,11 +35,12 @@ export default defineComponent({
 })
 </script>
 <style lang="scss">
-@import url('node_modules/ol/ol.css');
+
 #map {
-  height: 571px;
+  padding: auto;
   width: 100%; /* Ancho del contenedor del mapa */
   max-width: 100%; /* Ancho máximo del contenedor del mapa */
+  height: 900px;
   overflow: hidden; /* Oculta cualquier contenido que se salga del contenedor */
   position: relative; /* Posición relativa para los elementos internos */
 }
